@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2812B3B723B43EB200D264EF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2812B3B623B43EB200D264EF /* HealthKit.framework */; };
 		287FBF4523A5CF640073E613 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FBF4423A5CF640073E613 /* AppDelegate.swift */; };
-		287FBF4723A5CF640073E613 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FBF4623A5CF640073E613 /* ViewController.swift */; };
 		287FBF4A23A5CF640073E613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287FBF4823A5CF640073E613 /* Main.storyboard */; };
 		287FBF4C23A5CF660073E613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 287FBF4B23A5CF660073E613 /* Assets.xcassets */; };
 		287FBF4F23A5CF660073E613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287FBF4D23A5CF660073E613 /* LaunchScreen.storyboard */; };
@@ -16,12 +16,16 @@
 		287FBF6523A5CF660073E613 /* sapuriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FBF6423A5CF660073E613 /* sapuriUITests.swift */; };
 		287FBF7323A5CFD80073E613 /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 287FBF7223A5CFD80073E613 /* wood.jpg */; };
 		287FBF7523A6182D0073E613 /* IMG_A1A04C8448E7-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 287FBF7423A6182D0073E613 /* IMG_A1A04C8448E7-1.jpeg */; };
-		287FBF7723A7B23D0073E613 /* gray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 287FBF7623A7B23D0073E613 /* gray.jpg */; };
-		287FBF7923A7B3B30073E613 /* pink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 287FBF7823A7B3B30073E613 /* pink.jpg */; };
 		287FBF7B23A7B4020073E613 /* blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 287FBF7A23A7B4020073E613 /* blue.jpg */; };
 		287FBF8123A7B9660073E613 /* SupporterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FBF8023A7B9660073E613 /* SupporterViewController.swift */; };
 		287FBF8323A7B97A0073E613 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FBF8223A7B97A0073E613 /* HealthViewController.swift */; };
-		287FBF8523AF06EA0073E613 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FBF8423AF06EA0073E613 /* EntryViewController.swift */; };
+		287FBF8923AF6FDE0073E613 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 287FBF8823AF6FDD0073E613 /* white.jpg */; };
+		287FBF9523B266880073E613 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FBF9423B266880073E613 /* TermsViewController.swift */; };
+		287FBF9723B26F8C0073E613 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FBF9623B26F8C0073E613 /* PrivacyViewController.swift */; };
+		287FBF9923B273ED0073E613 /* sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 287FBF9823B273ED0073E613 /* sky.jpg */; };
+		28B0122E23B2EC75009123A5 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B0122D23B2EC75009123A5 /* CouponViewController.swift */; };
+		28B0123423B33FDF009123A5 /* sapuribrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B0123323B33FDF009123A5 /* sapuribrack.png */; };
+		28B0123623B34A13009123A5 /* pink.gif in Resources */ = {isa = PBXBuildFile; fileRef = 28B0123523B34A13009123A5 /* pink.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2812B3B223B43E9500D264EF /* sapuri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sapuri.entitlements; sourceTree = "<group>"; };
+		2812B3B623B43EB200D264EF /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		287FBF4123A5CF640073E613 /* sapuri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sapuri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		287FBF4423A5CF640073E613 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		287FBF4623A5CF640073E613 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		287FBF4923A5CF640073E613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		287FBF4B23A5CF660073E613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		287FBF4E23A5CF660073E613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,12 +62,16 @@
 		287FBF6623A5CF660073E613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		287FBF7223A5CFD80073E613 /* wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpg; sourceTree = "<group>"; };
 		287FBF7423A6182D0073E613 /* IMG_A1A04C8448E7-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMG_A1A04C8448E7-1.jpeg"; sourceTree = "<group>"; };
-		287FBF7623A7B23D0073E613 /* gray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gray.jpg; sourceTree = "<group>"; };
-		287FBF7823A7B3B30073E613 /* pink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pink.jpg; sourceTree = "<group>"; };
 		287FBF7A23A7B4020073E613 /* blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue.jpg; sourceTree = "<group>"; };
 		287FBF8023A7B9660073E613 /* SupporterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupporterViewController.swift; sourceTree = "<group>"; };
 		287FBF8223A7B97A0073E613 /* HealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
-		287FBF8423AF06EA0073E613 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		287FBF8823AF6FDD0073E613 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
+		287FBF9423B266880073E613 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		287FBF9623B26F8C0073E613 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		287FBF9823B273ED0073E613 /* sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpg; sourceTree = "<group>"; };
+		28B0122D23B2EC75009123A5 /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
+		28B0123323B33FDF009123A5 /* sapuribrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sapuribrack.png; sourceTree = "<group>"; };
+		28B0123523B34A13009123A5 /* pink.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pink.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2812B3B723B43EB200D264EF /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2812B3B323B43E9500D264EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2812B3B623B43EB200D264EF /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		287FBF3823A5CF640073E613 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +115,7 @@
 				287FBF5823A5CF660073E613 /* sapuriTests */,
 				287FBF6323A5CF660073E613 /* sapuriUITests */,
 				287FBF4223A5CF640073E613 /* Products */,
+				2812B3B323B43E9500D264EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,20 +132,24 @@
 		287FBF4323A5CF640073E613 /* sapuri */ = {
 			isa = PBXGroup;
 			children = (
+				2812B3B223B43E9500D264EF /* sapuri.entitlements */,
+				28B0123523B34A13009123A5 /* pink.gif */,
+				28B0123323B33FDF009123A5 /* sapuribrack.png */,
+				287FBF9823B273ED0073E613 /* sky.jpg */,
+				287FBF8823AF6FDD0073E613 /* white.jpg */,
 				287FBF7A23A7B4020073E613 /* blue.jpg */,
-				287FBF7823A7B3B30073E613 /* pink.jpg */,
-				287FBF7623A7B23D0073E613 /* gray.jpg */,
 				287FBF7423A6182D0073E613 /* IMG_A1A04C8448E7-1.jpeg */,
 				287FBF7223A5CFD80073E613 /* wood.jpg */,
 				287FBF4423A5CF640073E613 /* AppDelegate.swift */,
-				287FBF4623A5CF640073E613 /* ViewController.swift */,
+				287FBF8023A7B9660073E613 /* SupporterViewController.swift */,
+				287FBF8223A7B97A0073E613 /* HealthViewController.swift */,
+				287FBF9423B266880073E613 /* TermsViewController.swift */,
+				287FBF9623B26F8C0073E613 /* PrivacyViewController.swift */,
+				28B0122D23B2EC75009123A5 /* CouponViewController.swift */,
 				287FBF4823A5CF640073E613 /* Main.storyboard */,
 				287FBF4B23A5CF660073E613 /* Assets.xcassets */,
 				287FBF4D23A5CF660073E613 /* LaunchScreen.storyboard */,
 				287FBF5023A5CF660073E613 /* Info.plist */,
-				287FBF8023A7B9660073E613 /* SupporterViewController.swift */,
-				287FBF8223A7B97A0073E613 /* HealthViewController.swift */,
-				287FBF8423AF06EA0073E613 /* EntryViewController.swift */,
 			);
 			path = sapuri;
 			sourceTree = "<group>";
@@ -217,6 +240,11 @@
 				TargetAttributes = {
 					287FBF4023A5CF640073E613 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					287FBF5423A5CF660073E613 = {
 						CreatedOnToolsVersion = 10.3;
@@ -255,11 +283,13 @@
 			files = (
 				287FBF7323A5CFD80073E613 /* wood.jpg in Resources */,
 				287FBF4F23A5CF660073E613 /* LaunchScreen.storyboard in Resources */,
-				287FBF7923A7B3B30073E613 /* pink.jpg in Resources */,
 				287FBF4C23A5CF660073E613 /* Assets.xcassets in Resources */,
 				287FBF4A23A5CF640073E613 /* Main.storyboard in Resources */,
-				287FBF7723A7B23D0073E613 /* gray.jpg in Resources */,
+				287FBF8923AF6FDE0073E613 /* white.jpg in Resources */,
 				287FBF7523A6182D0073E613 /* IMG_A1A04C8448E7-1.jpeg in Resources */,
+				28B0123423B33FDF009123A5 /* sapuribrack.png in Resources */,
+				287FBF9923B273ED0073E613 /* sky.jpg in Resources */,
+				28B0123623B34A13009123A5 /* pink.gif in Resources */,
 				287FBF7B23A7B4020073E613 /* blue.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,10 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287FBF4723A5CF640073E613 /* ViewController.swift in Sources */,
-				287FBF8523AF06EA0073E613 /* EntryViewController.swift in Sources */,
 				287FBF4523A5CF640073E613 /* AppDelegate.swift in Sources */,
+				287FBF9723B26F8C0073E613 /* PrivacyViewController.swift in Sources */,
 				287FBF8323A7B97A0073E613 /* HealthViewController.swift in Sources */,
+				287FBF9523B266880073E613 /* TermsViewController.swift in Sources */,
+				28B0122E23B2EC75009123A5 /* CouponViewController.swift in Sources */,
 				287FBF8123A7B9660073E613 /* SupporterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,13 +495,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sapuri/sapuri.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59LTY9T594;
 				INFOPLIST_FILE = sapuri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.sapuri;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ann.sapuri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -481,13 +514,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sapuri/sapuri.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59LTY9T594;
 				INFOPLIST_FILE = sapuri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.sapuri;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ann.sapuri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

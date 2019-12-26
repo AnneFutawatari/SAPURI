@@ -1,19 +1,23 @@
 //
-//  EntryViewController.swift
+//  PrivacyViewController.swift
 //  sapuri
 //
-//  Created by 二渡杏 on 2019/12/22.
+//  Created by 二渡杏 on 2019/12/25.
 //  Copyright © 2019 二渡杏. All rights reserved.
 //
 
 import UIKit
 
-class EntryViewController: UIViewController {
+class PrivacyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func back() {
+        
     }
     
 
