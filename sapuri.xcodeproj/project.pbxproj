@@ -20,7 +20,6 @@
 		28E6A7BF23F9086300C182E4 /* dryflower.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7B023F9086300C182E4 /* dryflower.jpeg */; };
 		28E6A7C023F9086300C182E4 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A7B123F9086300C182E4 /* HealthViewController.swift */; };
 		28E6A7C123F9086300C182E4 /* photo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7B223F9086300C182E4 /* photo.jpeg */; };
-		28E6A7C223F9086300C182E4 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A7B323F9086300C182E4 /* PrivacyViewController.swift */; };
 		28E6A7C323F9086300C182E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A7B423F9086300C182E4 /* AppDelegate.swift */; };
 		28E6A7C423F9086300C182E4 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A7B523F9086300C182E4 /* CouponViewController.swift */; };
 		28E6A7C523F9086300C182E4 /* d.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7B623F9086300C182E4 /* d.png */; };
@@ -64,7 +63,6 @@
 		28E6A7B023F9086300C182E4 /* dryflower.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dryflower.jpeg; sourceTree = "<group>"; };
 		28E6A7B123F9086300C182E4 /* HealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		28E6A7B223F9086300C182E4 /* photo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpeg; sourceTree = "<group>"; };
-		28E6A7B323F9086300C182E4 /* PrivacyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		28E6A7B423F9086300C182E4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E6A7B523F9086300C182E4 /* CouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		28E6A7B623F9086300C182E4 /* d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d.png; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 				28F46BFD23F90E0D00199271 /* Main.storyboard */,
 				28E6A7A723F9086300C182E4 /* ViewController.swift */,
 				28E6A7B123F9086300C182E4 /* HealthViewController.swift */,
-				28E6A7B323F9086300C182E4 /* PrivacyViewController.swift */,
 				28E6A7B423F9086300C182E4 /* AppDelegate.swift */,
 				28E6A7B523F9086300C182E4 /* CouponViewController.swift */,
 			);
@@ -325,7 +322,6 @@
 				28E6A7C023F9086300C182E4 /* HealthViewController.swift in Sources */,
 				28E6A7B823F9086300C182E4 /* ViewController.swift in Sources */,
 				28E6A7C423F9086300C182E4 /* CouponViewController.swift in Sources */,
-				28E6A7C223F9086300C182E4 /* PrivacyViewController.swift in Sources */,
 				28E6A7BA23F9086300C182E4 /* TermsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
