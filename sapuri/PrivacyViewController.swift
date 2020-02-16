@@ -15,12 +15,6 @@ class PrivacyViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func back() {
-        
-    }
-    
-
     /*
     // MARK: - Navigation
 
@@ -30,5 +24,4 @@ class PrivacyViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

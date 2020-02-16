@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class CouponViewController: UIViewController {
 
@@ -16,11 +17,14 @@ class CouponViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func back() {
-        
-    }
-    
+    @IBAction func tappedSafariButton(sender: AnyObject) {
+        let qiitaUrl = NSURL(string: "https://sapuricoupon.netlify.com/")
 
+        if let qiitaUrl = qiitaUrl {
+            let safariViewController = SFSafariViewController(url: qiitaUrl as URL)
+            present(safariViewController, animated: false, completion: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 
@@ -30,5 +34,4 @@ class CouponViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

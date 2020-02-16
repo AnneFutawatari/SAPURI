@@ -12,15 +12,8 @@ class TermsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func back() {
-        
-    }
-    
-
     /*
     // MARK: - Navigation
 
@@ -30,5 +23,4 @@ class TermsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
