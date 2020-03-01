@@ -22,8 +22,8 @@
 		28E6A7C323F9086300C182E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A7B423F9086300C182E4 /* AppDelegate.swift */; };
 		28E6A7C423F9086300C182E4 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A7B523F9086300C182E4 /* CouponViewController.swift */; };
 		28E6A7C523F9086300C182E4 /* d.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7B623F9086300C182E4 /* d.png */; };
-		28E6A7C623F9086300C182E4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7B723F9086300C182E4 /* Info.plist */; };
 		28F46BFE23F90E0D00199271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F46BFD23F90E0D00199271 /* Main.storyboard */; };
+		28F46C0123F984E400199271 /* スクリーンショット 2020-02-16 23.10.07.png in Resources */ = {isa = PBXBuildFile; fileRef = 28F46C0023F984E400199271 /* スクリーンショット 2020-02-16 23.10.07.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +67,7 @@
 		28E6A7B723F9086300C182E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28E6A7C723F9097C00C182E4 /* sapuri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sapuri.entitlements; sourceTree = "<group>"; };
 		28F46BFD23F90E0D00199271 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		28F46C0023F984E400199271 /* スクリーンショット 2020-02-16 23.10.07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2020-02-16 23.10.07.png"; path = "../../../../Desktop/スクリーンショット 2020-02-16 23.10.07.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +159,7 @@
 		28F46BFF23F90E4700199271 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				28F46C0023F984E400199271 /* スクリーンショット 2020-02-16 23.10.07.png */,
 				28E6A7AE23F9086300C182E4 /* Assets.xcassets */,
 				28E6A7A823F9086300C182E4 /* g.jpeg */,
 				28E6A7AA23F9086300C182E4 /* red.jpeg */,
@@ -282,12 +284,12 @@
 			files = (
 				28E6A7C123F9086300C182E4 /* photo.jpeg in Resources */,
 				28E6A7BE23F9086300C182E4 /* c.jpeg in Resources */,
+				28F46C0123F984E400199271 /* スクリーンショット 2020-02-16 23.10.07.png in Resources */,
 				28E6A7BC23F9086300C182E4 /* key.jpeg in Resources */,
 				28A6EDD823F90B470090E1E9 /* Default-568h@2x.png in Resources */,
 				28E6A7B923F9086300C182E4 /* g.jpeg in Resources */,
 				28F46BFE23F90E0D00199271 /* Main.storyboard in Resources */,
 				28E6A7BB23F9086300C182E4 /* red.jpeg in Resources */,
-				28E6A7C623F9086300C182E4 /* Info.plist in Resources */,
 				28E6A7BF23F9086300C182E4 /* dryflower.jpeg in Resources */,
 				28E6A7C523F9086300C182E4 /* d.png in Resources */,
 				28E6A7BD23F9086300C182E4 /* Assets.xcassets in Resources */,
@@ -474,17 +476,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = sapuri/sapuri/sapuri.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = 53Z9639ZF5;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.annfutawatari.sapuri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -494,17 +499,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = sapuri/sapuri/sapuri.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = 53Z9639ZF5;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.annfutawatari.sapuri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
