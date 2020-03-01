@@ -24,6 +24,10 @@
 	<string>ユーザーの位置情報を取得するために使用します。</string>
 	<key>NSMotionUsageDescription</key>
 	<string>ユーザーの歩数を取得するために使用します。</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>ユーザーの歩数情報を書き込むために使用します。</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>ユーザーの歩数を取得するために使用します。</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

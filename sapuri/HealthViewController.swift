@@ -10,6 +10,7 @@ import UIKit
 import CoreMotion
 import CoreLocation
 import MapKit
+import HealthKit
 
 class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
@@ -17,9 +18,12 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     var myLocationManager: CLLocationManager!
     var myPedometer: CMPedometer!
     
+    let saveData: UserDefaults = UserDefaults.standard
+    @IBOutlet var startButton: UIButton!
     @IBOutlet var todayLabel: UILabel!
     @IBOutlet var monthLabel: UILabel!
     
+    var numberArray:[Int] = []
     
     @IBOutlet var hour2Label: UILabel!
     @IBOutlet var hour1Label: UILabel!
@@ -30,6 +34,21 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let saveState = saveData.object(forKey: "walkStart")
+        if saveState != nil{
+            startButton.setTitle("walkStop", for: .normal)
+        }
+        if let array = saveData.array(forKey: "steps") {
+            numberArray = array as![Int]
+        }
+        
+        let timer = Timer.scheduledTimer(timeInterval: 1.0,
+                                         target: self,
+                                         selector: #selector(time),
+                                         userInfo: nil,
+                                         repeats: true)
+        timer.fire()
         
         //歩数計の生成
         myPedometer = CMPedometer()
@@ -98,13 +117,6 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
             myMapView.setRegion(myRegion, animated: true)
             myMapView.setCenter(myMapView.userLocation.coordinate, animated: true)
             myMapView.userTrackingMode = MKUserTrackingMode.follow
-        
-        let timer = Timer.scheduledTimer(timeInterval: 1.0,
-                                         target: self,
-                                         selector: #selector(time),
-                                         userInfo: nil,
-                                         repeats: true)
-        timer.fire()
     }
     
     @objc func time(){
@@ -166,6 +178,54 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
             print("Restricted")
         case .notDetermined:
             print("NotDetermined")
+        @unknown default: break
+        }
+    }
+    
+    func loadWalkCount(){
+        let start = Calendar.current.date(byAdding: .month, value: -1, to: Date())
+        let end = Date()
+        
+        let store = HKHealthStore()
+        let types: Set<HKSampleType> = [
+            HKSampleType.quantityType(forIdentifier: .stepCount)!
+        ]
+        store.requestAuthorization(toShare: types, read: types) { success, error in
+            if success{
+                print("認証成功")
+            }
+        }
+        
+        let predicate = HKQuery.predicateForSamples(withStart: start, end: end)
+        if let type = types.first {
+            let query = HKStatisticsQuery(quantityType: type as! HKQuantityType,
+                                          quantitySamplePredicate: predicate,
+                                          options: .cumulativeSum){ (query, statistics, error) in
+                                            
+                                            if let walkCount = statistics?.sumQuantity()?.description {
+                                                let count = walkCount.replacingOccurrences(of: " count", with: "")
+                                                self.numberArray.append(Int(count)!)
+                                                self.saveData.set(self.numberArray, forKey: "steps")
+                                                self.monthLabel.text = count
+                                            } else {
+                                                print("--1--")
+                                                self.monthLabel.text = "--2--"
+                                            }
+            }
+            store.execute(query)
+        }
+    }
+    
+    @IBAction func walkStart() {
+        self.monthLabel.text = "歩数が表示されます"
+        
+        if startButton.titleLabel?.text == "start" {
+            saveData.set(Data(), forKey: "walkStart")
+            startButton.setTitle("walkStop", for: .normal)
+        } else {
+            loadWalkCount()
+            startButton.setTitle("start", for: .normal)
+            saveData.removeObject(forKey: "walkStart")
         }
     }
 }
