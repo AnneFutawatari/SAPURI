@@ -1,15 +1,15 @@
 //
-//  CouponViewController.swift
+//  CouponsiteViewController.swift
 //  sapuri
 //
-//  Created by 二渡杏 on 2019/12/25.
-//  Copyright © 2019 二渡杏. All rights reserved.
+//  Created by 二渡杏 on 2020/03/11.
+//  Copyright © 2020 二渡杏. All rights reserved.
 //
 
 import UIKit
 import SafariServices
 
-class CouponViewController: UIViewController {
+class CouponsiteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,13 +18,15 @@ class CouponViewController: UIViewController {
     }
     
     @IBAction func tappedSafariButton(sender: AnyObject) {
-        let qiitaUrl = NSURL(string: "https://sapuricoupon.netlify.com/")
+        let qiitaUrl = NSURL(string: "https://sapuric.netlify.com")
 
         if let qiitaUrl = qiitaUrl {
             let safariViewController = SFSafariViewController(url: qiitaUrl as URL)
             present(safariViewController, animated: false, completion: nil)
         }
     }
+    
+
     /*
     // MARK: - Navigation
 
@@ -34,4 +36,5 @@ class CouponViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 }

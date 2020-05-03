@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		287FBF5A23A5CF660073E613 /* sapuriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FBF5923A5CF660073E613 /* sapuriTests.swift */; };
-		287FBF6523A5CF660073E613 /* sapuriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287FBF6423A5CF660073E613 /* sapuriUITests.swift */; };
-		28A6EDD823F90B470090E1E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28A6EDD723F90B470090E1E9 /* Default-568h@2x.png */; };
-		28E6A7B823F9086300C182E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A7A723F9086300C182E4 /* ViewController.swift */; };
-		28E6A7B923F9086300C182E4 /* g.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7A823F9086300C182E4 /* g.jpeg */; };
-		28E6A7BB23F9086300C182E4 /* red.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7AA23F9086300C182E4 /* red.jpeg */; };
-		28E6A7BC23F9086300C182E4 /* key.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7AB23F9086300C182E4 /* key.jpeg */; };
-		28E6A7BD23F9086300C182E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7AE23F9086300C182E4 /* Assets.xcassets */; };
-		28E6A7BE23F9086300C182E4 /* c.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7AF23F9086300C182E4 /* c.jpeg */; };
-		28E6A7BF23F9086300C182E4 /* dryflower.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7B023F9086300C182E4 /* dryflower.jpeg */; };
-		28E6A7C023F9086300C182E4 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A7B123F9086300C182E4 /* HealthViewController.swift */; };
-		28E6A7C123F9086300C182E4 /* photo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7B223F9086300C182E4 /* photo.jpeg */; };
-		28E6A7C323F9086300C182E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A7B423F9086300C182E4 /* AppDelegate.swift */; };
-		28E6A7C423F9086300C182E4 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A7B523F9086300C182E4 /* CouponViewController.swift */; };
-		28E6A7C523F9086300C182E4 /* d.png in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A7B623F9086300C182E4 /* d.png */; };
-		28F46BFE23F90E0D00199271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F46BFD23F90E0D00199271 /* Main.storyboard */; };
-		28F46C0123F984E400199271 /* スクリーンショット 2020-02-16 23.10.07.png in Resources */ = {isa = PBXBuildFile; fileRef = 28F46C0023F984E400199271 /* スクリーンショット 2020-02-16 23.10.07.png */; };
+		283AAE472435A16F008EDE1C /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 283AAE462435A16F008EDE1C /* main.png */; };
+		28F5F7112417EACB00641DB7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 28F5F6FB2417EACB00641DB7 /* .gitignore */; };
+		28F5F7432417EB8800641DB7 /* cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F5F7422417EB8800641DB7 /* cafe.jpg */; };
+		28FE2A0D2417F634000A8ACA /* photo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28FE2A0C2417F633000A8ACA /* photo.jpeg */; };
+		28FE2A112417F649000A8ACA /* d.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FE2A102417F649000A8ACA /* d.png */; };
+		28FE2A152417F657000A8ACA /* g.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28FE2A142417F657000A8ACA /* g.jpeg */; };
+		28FE2A1D2417F685000A8ACA /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE2A1C2417F685000A8ACA /* HealthViewController.swift */; };
+		28FE2A1F2417F69B000A8ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FE2A1E2417F69B000A8ACA /* Main.storyboard */; };
+		28FE2A242417F6D7000A8ACA /* sapuriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE2A232417F6D7000A8ACA /* sapuriTests.swift */; };
+		28FE2A262417F707000A8ACA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28FE2A252417F707000A8ACA /* Info.plist */; };
+		28FE2A282417F711000A8ACA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28FE2A272417F711000A8ACA /* Info.plist */; };
+		28FE2A2A2417F72D000A8ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE2A292417F72C000A8ACA /* AppDelegate.swift */; };
+		28FE2A352417F873000A8ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FE2A342417F873000A8ACA /* Assets.xcassets */; };
+		28FE2A382418A1F5000A8ACA /* sapuriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE2A202417F6C3000A8ACA /* sapuriUITests.swift */; };
+		28FE2A3A2418A352000A8ACA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28FE2A392418A352000A8ACA /* Info.plist */; };
+		28FE2A402418A656000A8ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE2A3F2418A656000A8ACA /* AppDelegate.swift */; };
+		28FE2A422418AA2B000A8ACA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE2A412418AA2B000A8ACA /* MainViewController.swift */; };
+		28FE2A442418AB7A000A8ACA /* CouponsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE2A432418AB7A000A8ACA /* CouponsiteViewController.swift */; };
+		28FE2A462418AC41000A8ACA /* uploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE2A452418AC41000A8ACA /* uploadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,30 +46,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2814A749244034280046B229 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2814A76F24403BF80046B229 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		283AAE462435A16F008EDE1C /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main.png; path = "../../../../Desktop/SAPURI 写真！消すな！！/main.png"; sourceTree = "<group>"; };
 		287FBF4123A5CF640073E613 /* sapuri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sapuri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		287FBF5523A5CF660073E613 /* sapuriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sapuriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		287FBF5923A5CF660073E613 /* sapuriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sapuriTests.swift; sourceTree = "<group>"; };
-		287FBF5B23A5CF660073E613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		287FBF6023A5CF660073E613 /* sapuriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sapuriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		287FBF6423A5CF660073E613 /* sapuriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sapuriUITests.swift; sourceTree = "<group>"; };
-		287FBF6623A5CF660073E613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28A6EDD723F90B470090E1E9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		28E6A7A723F9086300C182E4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28E6A7A823F9086300C182E4 /* g.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = g.jpeg; sourceTree = "<group>"; };
-		28E6A7AA23F9086300C182E4 /* red.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red.jpeg; sourceTree = "<group>"; };
-		28E6A7AB23F9086300C182E4 /* key.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = key.jpeg; sourceTree = "<group>"; };
-		28E6A7AE23F9086300C182E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		28E6A7AF23F9086300C182E4 /* c.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c.jpeg; sourceTree = "<group>"; };
-		28E6A7B023F9086300C182E4 /* dryflower.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dryflower.jpeg; sourceTree = "<group>"; };
-		28E6A7B123F9086300C182E4 /* HealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
-		28E6A7B223F9086300C182E4 /* photo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpeg; sourceTree = "<group>"; };
-		28E6A7B423F9086300C182E4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28E6A7B523F9086300C182E4 /* CouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
-		28E6A7B623F9086300C182E4 /* d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d.png; sourceTree = "<group>"; };
-		28E6A7B723F9086300C182E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28E6A7C723F9097C00C182E4 /* sapuri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sapuri.entitlements; sourceTree = "<group>"; };
-		28F46BFD23F90E0D00199271 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		28F46C0023F984E400199271 /* スクリーンショット 2020-02-16 23.10.07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2020-02-16 23.10.07.png"; path = "../../../../Desktop/スクリーンショット 2020-02-16 23.10.07.png"; sourceTree = "<group>"; };
+		28F5F6FB2417EACB00641DB7 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		28F5F7422417EB8800641DB7 /* cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cafe.jpg; sourceTree = "<group>"; };
+		28FE2A0C2417F633000A8ACA /* photo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpeg; sourceTree = "<group>"; };
+		28FE2A102417F649000A8ACA /* d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d.png; sourceTree = "<group>"; };
+		28FE2A142417F657000A8ACA /* g.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = g.jpeg; sourceTree = "<group>"; };
+		28FE2A1C2417F685000A8ACA /* HealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		28FE2A1E2417F69B000A8ACA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		28FE2A202417F6C3000A8ACA /* sapuriUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sapuriUITests.swift; sourceTree = "<group>"; };
+		28FE2A232417F6D7000A8ACA /* sapuriTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sapuriTests.swift; sourceTree = "<group>"; };
+		28FE2A252417F707000A8ACA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28FE2A272417F711000A8ACA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28FE2A292417F72C000A8ACA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28FE2A2D2417F7D6000A8ACA /* sapuri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sapuri.entitlements; sourceTree = "<group>"; };
+		28FE2A342417F873000A8ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28FE2A392418A352000A8ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		28FE2A3F2418A656000A8ACA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../Desktop/AppDelegate.swift; sourceTree = "<group>"; };
+		28FE2A412418AA2B000A8ACA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		28FE2A432418AB7A000A8ACA /* CouponsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponsiteViewController.swift; sourceTree = "<group>"; };
+		28FE2A452418AC41000A8ACA /* uploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +108,12 @@
 		287FBF3823A5CF640073E613 = {
 			isa = PBXGroup;
 			children = (
-				28E6A7B723F9086300C182E4 /* Info.plist */,
-				28E6A7A623F9086300C182E4 /* sapuri */,
+				28F5F6E22417EACB00641DB7 /* sapuri */,
 				287FBF5823A5CF660073E613 /* sapuriTests */,
 				287FBF6323A5CF660073E613 /* sapuriUITests */,
 				287FBF4223A5CF640073E613 /* Products */,
 				2812B3B323B43E9500D264EF /* Frameworks */,
+				2889BDCF2417ED3E00448EFD /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,8 +130,8 @@
 		287FBF5823A5CF660073E613 /* sapuriTests */ = {
 			isa = PBXGroup;
 			children = (
-				287FBF5923A5CF660073E613 /* sapuriTests.swift */,
-				287FBF5B23A5CF660073E613 /* Info.plist */,
+				28FE2A232417F6D7000A8ACA /* sapuriTests.swift */,
+				28FE2A252417F707000A8ACA /* Info.plist */,
 			);
 			path = sapuriTests;
 			sourceTree = "<group>";
@@ -136,39 +139,56 @@
 		287FBF6323A5CF660073E613 /* sapuriUITests */ = {
 			isa = PBXGroup;
 			children = (
-				287FBF6423A5CF660073E613 /* sapuriUITests.swift */,
-				287FBF6623A5CF660073E613 /* Info.plist */,
+				28FE2A202417F6C3000A8ACA /* sapuriUITests.swift */,
+				28FE2A272417F711000A8ACA /* Info.plist */,
+				28FE2A392418A352000A8ACA /* Info.plist */,
 			);
 			path = sapuriUITests;
 			sourceTree = "<group>";
 		};
-		28E6A7A623F9086300C182E4 /* sapuri */ = {
+		2889BDCF2417ED3E00448EFD /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				28F46BFF23F90E4700199271 /* Resources */,
-				28E6A7C723F9097C00C182E4 /* sapuri.entitlements */,
-				28F46BFD23F90E0D00199271 /* Main.storyboard */,
-				28E6A7A723F9086300C182E4 /* ViewController.swift */,
-				28E6A7B123F9086300C182E4 /* HealthViewController.swift */,
-				28E6A7B423F9086300C182E4 /* AppDelegate.swift */,
-				28E6A7B523F9086300C182E4 /* CouponViewController.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		28F5F6E22417EACB00641DB7 /* sapuri */ = {
+			isa = PBXGroup;
+			children = (
+				28F5F6E62417EACB00641DB7 /* sapuri */,
+				28F5F6FB2417EACB00641DB7 /* .gitignore */,
+			);
+			name = sapuri;
+			sourceTree = "<group>";
+		};
+		28F5F6E62417EACB00641DB7 /* sapuri */ = {
+			isa = PBXGroup;
+			children = (
+				28FE2A412418AA2B000A8ACA /* MainViewController.swift */,
+				28FE2A1C2417F685000A8ACA /* HealthViewController.swift */,
+				28FE2A452418AC41000A8ACA /* uploadViewController.swift */,
+				28FE2A292417F72C000A8ACA /* AppDelegate.swift */,
+				28FE2A3F2418A656000A8ACA /* AppDelegate.swift */,
+				28FE2A432418AB7A000A8ACA /* CouponsiteViewController.swift */,
+				28FE2A1E2417F69B000A8ACA /* Main.storyboard */,
+				28FE2A2D2417F7D6000A8ACA /* sapuri.entitlements */,
+				2814A749244034280046B229 /* Info.plist */,
+				2814A76F24403BF80046B229 /* Info.plist */,
+				28FE2A342417F873000A8ACA /* Assets.xcassets */,
+				28F5F6EA2417EACB00641DB7 /* Resources */,
 			);
 			path = sapuri;
 			sourceTree = "<group>";
 		};
-		28F46BFF23F90E4700199271 /* Resources */ = {
+		28F5F6EA2417EACB00641DB7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				28F46C0023F984E400199271 /* スクリーンショット 2020-02-16 23.10.07.png */,
-				28E6A7AE23F9086300C182E4 /* Assets.xcassets */,
-				28E6A7A823F9086300C182E4 /* g.jpeg */,
-				28E6A7AA23F9086300C182E4 /* red.jpeg */,
-				28E6A7AF23F9086300C182E4 /* c.jpeg */,
-				28E6A7B023F9086300C182E4 /* dryflower.jpeg */,
-				28E6A7B223F9086300C182E4 /* photo.jpeg */,
-				28E6A7AB23F9086300C182E4 /* key.jpeg */,
-				28E6A7B623F9086300C182E4 /* d.png */,
-				28A6EDD723F90B470090E1E9 /* Default-568h@2x.png */,
+				283AAE462435A16F008EDE1C /* main.png */,
+				28F5F7422417EB8800641DB7 /* cafe.jpg */,
+				28FE2A0C2417F633000A8ACA /* photo.jpeg */,
+				28FE2A102417F649000A8ACA /* d.png */,
+				28FE2A142417F657000A8ACA /* g.jpeg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -236,7 +256,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "二渡杏";
 				TargetAttributes = {
 					287FBF4023A5CF640073E613 = {
@@ -249,10 +269,12 @@
 					};
 					287FBF5423A5CF660073E613 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1130;
 						TestTargetID = 287FBF4023A5CF640073E613;
 					};
 					287FBF5F23A5CF660073E613 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1130;
 						TestTargetID = 287FBF4023A5CF640073E613;
 					};
 				};
@@ -282,17 +304,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28E6A7C123F9086300C182E4 /* photo.jpeg in Resources */,
-				28E6A7BE23F9086300C182E4 /* c.jpeg in Resources */,
-				28F46C0123F984E400199271 /* スクリーンショット 2020-02-16 23.10.07.png in Resources */,
-				28E6A7BC23F9086300C182E4 /* key.jpeg in Resources */,
-				28A6EDD823F90B470090E1E9 /* Default-568h@2x.png in Resources */,
-				28E6A7B923F9086300C182E4 /* g.jpeg in Resources */,
-				28F46BFE23F90E0D00199271 /* Main.storyboard in Resources */,
-				28E6A7BB23F9086300C182E4 /* red.jpeg in Resources */,
-				28E6A7BF23F9086300C182E4 /* dryflower.jpeg in Resources */,
-				28E6A7C523F9086300C182E4 /* d.png in Resources */,
-				28E6A7BD23F9086300C182E4 /* Assets.xcassets in Resources */,
+				283AAE472435A16F008EDE1C /* main.png in Resources */,
+				28FE2A112417F649000A8ACA /* d.png in Resources */,
+				28FE2A152417F657000A8ACA /* g.jpeg in Resources */,
+				28FE2A0D2417F634000A8ACA /* photo.jpeg in Resources */,
+				28FE2A1F2417F69B000A8ACA /* Main.storyboard in Resources */,
+				28F5F7112417EACB00641DB7 /* .gitignore in Resources */,
+				28F5F7432417EB8800641DB7 /* cafe.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +325,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FE2A3A2418A352000A8ACA /* Info.plist in Resources */,
+				28FE2A282417F711000A8ACA /* Info.plist in Resources */,
+				28FE2A352417F873000A8ACA /* Assets.xcassets in Resources */,
+				28FE2A262417F707000A8ACA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,10 +339,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28E6A7C323F9086300C182E4 /* AppDelegate.swift in Sources */,
-				28E6A7C023F9086300C182E4 /* HealthViewController.swift in Sources */,
-				28E6A7B823F9086300C182E4 /* ViewController.swift in Sources */,
-				28E6A7C423F9086300C182E4 /* CouponViewController.swift in Sources */,
+				28FE2A422418AA2B000A8ACA /* MainViewController.swift in Sources */,
+				28FE2A442418AB7A000A8ACA /* CouponsiteViewController.swift in Sources */,
+				28FE2A462418AC41000A8ACA /* uploadViewController.swift in Sources */,
+				28FE2A402418A656000A8ACA /* AppDelegate.swift in Sources */,
+				28FE2A1D2417F685000A8ACA /* HealthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287FBF5A23A5CF660073E613 /* sapuriTests.swift in Sources */,
+				28FE2A242417F6D7000A8ACA /* sapuriTests.swift in Sources */,
+				28FE2A382418A1F5000A8ACA /* sapuriUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287FBF6523A5CF660073E613 /* sapuriUITests.swift in Sources */,
+				28FE2A2A2417F72D000A8ACA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -462,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -479,16 +503,17 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = 53Z9639ZF5;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/sapuriTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.annfutawatari.sapuri;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = sapuri;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -502,16 +527,17 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = 53Z9639ZF5;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/sapuriTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.annfutawatari.sapuri;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = sapuri;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -523,7 +549,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53Z9639ZF5;
 				INFOPLIST_FILE = sapuriTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,6 +560,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.sapuriTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sapuriTests/sapuriTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sapuri.app/sapuri";
@@ -543,7 +573,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53Z9639ZF5;
 				INFOPLIST_FILE = sapuriTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -552,6 +584,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.sapuriTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sapuriTests/sapuriTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sapuri.app/sapuri";
@@ -562,9 +595,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 53Z9639ZF5;
 				INFOPLIST_FILE = sapuriUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,6 +607,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.sapuriUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = sapuri;
@@ -583,9 +618,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 53Z9639ZF5;
 				INFOPLIST_FILE = sapuriUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

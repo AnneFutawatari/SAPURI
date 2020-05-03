@@ -10,45 +10,17 @@ import UIKit
 import CoreMotion
 import CoreLocation
 import MapKit
-import HealthKit
 
-class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate{
     
     var myMapView: MKMapView!
     var myLocationManager: CLLocationManager!
     var myPedometer: CMPedometer!
     
-    let saveData: UserDefaults = UserDefaults.standard
-    @IBOutlet var startButton: UIButton!
     @IBOutlet var todayLabel: UILabel!
-    @IBOutlet var monthLabel: UILabel!
-    
-    var numberArray:[Int] = []
-    
-    @IBOutlet var hour2Label: UILabel!
-    @IBOutlet var hour1Label: UILabel!
-    @IBOutlet var minuts2Label: UILabel!
-    @IBOutlet var minuts1Label: UILabel!
-    @IBOutlet var second2Label: UILabel!
-    @IBOutlet var second1Label: UILabel!
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let saveState = saveData.object(forKey: "walkStart")
-        if saveState != nil{
-            startButton.setTitle("walkStop", for: .normal)
-        }
-        if let array = saveData.array(forKey: "steps") {
-            numberArray = array as![Int]
-        }
-        
-        let timer = Timer.scheduledTimer(timeInterval: 1.0,
-                                         target: self,
-                                         selector: #selector(time),
-                                         userInfo: nil,
-                                         repeats: true)
-        timer.fire()
         
         //歩数計の生成
         myPedometer = CMPedometer()
@@ -63,7 +35,9 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
                 return
             }
             let myStep = data.numberOfSteps
-        self.todayLabel.text = "\(myStep) 歩"
+            DispatchQueue.main.async {
+                self.todayLabel.text = "\(myStep)歩"
+            }
         })
         
         // LocationManagerの生成.
@@ -119,24 +93,6 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
             myMapView.userTrackingMode = MKUserTrackingMode.follow
     }
     
-    @objc func time(){
-        
-        let date: Date = Date()
-        let calender: Calendar = Calendar(identifier: .gregorian)
-        let components: DateComponents = calender.dateComponents([.hour, .minute, .second], from: date)
-        
-        let hour:Int = components.hour!
-        let minute:Int = components.minute!
-        let second:Int = components.second!
-        
-        hour2Label.text = String(hour / 10)
-        hour1Label.text = String(hour % 10)
-        minuts2Label.text = String(minute / 10)
-        minuts1Label.text = String(minute % 10)
-        second2Label.text = String(second / 10)
-        second1Label.text = String(second % 10)
-    }
-    
     // GPSから値を取得した際に呼び出されるメソッド.
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 
@@ -179,53 +135,6 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         case .notDetermined:
             print("NotDetermined")
         @unknown default: break
-        }
-    }
-    
-    func loadWalkCount(){
-        let start = Calendar.current.date(byAdding: .month, value: -1, to: Date())
-        let end = Date()
-        
-        let store = HKHealthStore()
-        let types: Set<HKSampleType> = [
-            HKSampleType.quantityType(forIdentifier: .stepCount)!
-        ]
-        store.requestAuthorization(toShare: types, read: types) { success, error in
-            if success{
-                print("認証成功")
-            }
-        }
-        
-        let predicate = HKQuery.predicateForSamples(withStart: start, end: end)
-        if let type = types.first {
-            let query = HKStatisticsQuery(quantityType: type as! HKQuantityType,
-                                          quantitySamplePredicate: predicate,
-                                          options: .cumulativeSum){ (query, statistics, error) in
-                                            
-                                            if let walkCount = statistics?.sumQuantity()?.description {
-                                                let count = walkCount.replacingOccurrences(of: " count", with: "")
-                                                self.numberArray.append(Int(count)!)
-                                                self.saveData.set(self.numberArray, forKey: "steps")
-                                                self.monthLabel.text = count
-                                            } else {
-                                                print("--1--")
-                                                self.monthLabel.text = "--2--"
-                                            }
-            }
-            store.execute(query)
-        }
-    }
-    
-    @IBAction func walkStart() {
-        self.monthLabel.text = "歩数が表示されます"
-        
-        if startButton.titleLabel?.text == "start" {
-            saveData.set(Data(), forKey: "walkStart")
-            startButton.setTitle("walkStop", for: .normal)
-        } else {
-            loadWalkCount()
-            startButton.setTitle("start", for: .normal)
-            saveData.removeObject(forKey: "walkStart")
         }
     }
 }
