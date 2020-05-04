@@ -18,36 +18,26 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     
     var myMapView: MKMapView!
     var myLocationManager: CLLocationManager!
-//    var myPedometer: CMPedometer!
-    var stepsString = 0.0
+
+    var stepsStringToday = 0.0
+    var stepsStringMonth = 0.0
 
     
     @IBOutlet var todayLabel: UILabel!
+    @IBOutlet var monthLabel: UILabel!
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         getTodaysSteps{(steps)in
-            self.stepsString = steps
-            //            }
+            self.stepsStringToday = steps
+            print(steps)
         }
-
-        //歩数計の生成
-//        myPedometer = CMPedometer()
-//
-//        //ペドメーター（歩数計）で計測開始
-//        myPedometer.startUpdates(from: NSDate() as Date, withHandler: { (pedometerData, error) in
-//            if let e = error {
-//                print(e.localizedDescription)
-//                return
-//            }
-//            guard let data = pedometerData else {
-//                return
-//            }
-//            let myStep = data.numberOfSteps
-//            DispatchQueue.main.async {
-//                self.todayLabel.text = "\(myStep)歩"
-//            }
-//        })
+        
+        getMonthSteps {(steps)in
+            self.stepsStringMonth = steps
+            print(steps)
+        }
         
         // LocationManagerの生成.
         myLocationManager = CLLocationManager()
@@ -103,9 +93,11 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        todayLabel.text = String(stepsString)
+        todayLabel.text = String(stepsStringToday)
+        monthLabel.text = String(stepsStringMonth)
     }
         
+    //今日の現在時刻までの歩数を取得する
     func getTodaysSteps(completion: @escaping (Double) -> Void) {
         let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
 
@@ -123,6 +115,26 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
 
         healthStore.execute(query)
     }
+    
+    //1ヶ月前から現在までの歩数を取得する
+    func getMonthSteps(completion: @escaping (Double) -> Void) {
+            let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
+
+            let calendar = Calendar.current
+            let now = Date()
+            let lastMonth = calendar.date(byAdding: .month, value: -1, to: calendar.startOfDay(for: now))
+            let predicate = HKQuery.predicateForSamples(withStart: lastMonth, end: now, options: .strictStartDate)
+
+            let query = HKStatisticsQuery(quantityType: stepsQuantityType, quantitySamplePredicate: predicate, options: .cumulativeSum) { _, result, _ in
+                guard let result = result, let sum = result.sumQuantity() else {
+                    completion(0.0)
+                    return
+                }
+                completion(sum.doubleValue(for: HKUnit.count()))
+            }
+
+            healthStore.execute(query)
+        }
     
     // GPSから値を取得した際に呼び出されるメソッド.
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
