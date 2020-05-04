@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		283AAE472435A16F008EDE1C /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 283AAE462435A16F008EDE1C /* main.png */; };
+		28864413245EA88A00059292 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28864412245EA88A00059292 /* HealthKit.framework */; };
+		28864415245EAB9600059292 /* HealthKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28864414245EAB9600059292 /* HealthKitUI.framework */; };
+		28864421245ED8FF00059292 /* kouyou.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28864420245ED8FF00059292 /* kouyou.jpg */; };
+		28864423245ED91300059292 /* yuhodou.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28864422245ED91300059292 /* yuhodou.jpg */; };
+		28864425245EE4E400059292 /* hodou.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28864424245EE4E400059292 /* hodou.jpg */; };
+		28864427245EEA8100059292 /* outlet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28864426245EEA8100059292 /* outlet.jpg */; };
+		28864429245EEADB00059292 /* cityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28864428245EEADB00059292 /* cityViewController.swift */; };
+		2886442B245EEBE200059292 /* bussan1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2886442A245EEBE200059292 /* bussan1.jpg */; };
+		2886442D245EEC4A00059292 /* yakuyoke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2886442C245EEC4A00059292 /* yakuyoke.jpg */; };
+		2886442F245EED2800059292 /* Domannaka.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2886442E245EED2800059292 /* Domannaka.jpg */; };
+		28864431245EEEA400059292 /* katakuri.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28864430245EEEA400059292 /* katakuri.jpg */; };
+		28864435245EEFD900059292 /* yoshizawa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28864434245EEFD900059292 /* yoshizawa.jpg */; };
 		28F5F7112417EACB00641DB7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 28F5F6FB2417EACB00641DB7 /* .gitignore */; };
 		28F5F7432417EB8800641DB7 /* cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F5F7422417EB8800641DB7 /* cafe.jpg */; };
-		28FE2A0D2417F634000A8ACA /* photo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28FE2A0C2417F633000A8ACA /* photo.jpeg */; };
-		28FE2A112417F649000A8ACA /* d.png in Resources */ = {isa = PBXBuildFile; fileRef = 28FE2A102417F649000A8ACA /* d.png */; };
-		28FE2A152417F657000A8ACA /* g.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 28FE2A142417F657000A8ACA /* g.jpeg */; };
 		28FE2A1D2417F685000A8ACA /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE2A1C2417F685000A8ACA /* HealthViewController.swift */; };
 		28FE2A1F2417F69B000A8ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FE2A1E2417F69B000A8ACA /* Main.storyboard */; };
 		28FE2A242417F6D7000A8ACA /* sapuriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE2A232417F6D7000A8ACA /* sapuriTests.swift */; };
@@ -52,11 +61,20 @@
 		287FBF4123A5CF640073E613 /* sapuri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sapuri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		287FBF5523A5CF660073E613 /* sapuriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sapuriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		287FBF6023A5CF660073E613 /* sapuriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sapuriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28864412245EA88A00059292 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		28864414245EAB9600059292 /* HealthKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKitUI.framework; path = System/Library/Frameworks/HealthKitUI.framework; sourceTree = SDKROOT; };
+		28864420245ED8FF00059292 /* kouyou.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kouyou.jpg; sourceTree = "<group>"; };
+		28864422245ED91300059292 /* yuhodou.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yuhodou.jpg; sourceTree = "<group>"; };
+		28864424245EE4E400059292 /* hodou.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hodou.jpg; sourceTree = "<group>"; };
+		28864426245EEA8100059292 /* outlet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outlet.jpg; sourceTree = "<group>"; };
+		28864428245EEADB00059292 /* cityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cityViewController.swift; sourceTree = "<group>"; };
+		2886442A245EEBE200059292 /* bussan1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bussan1.jpg; sourceTree = "<group>"; };
+		2886442C245EEC4A00059292 /* yakuyoke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yakuyoke.jpg; sourceTree = "<group>"; };
+		2886442E245EED2800059292 /* Domannaka.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Domannaka.jpg; sourceTree = "<group>"; };
+		28864430245EEEA400059292 /* katakuri.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = katakuri.jpg; sourceTree = "<group>"; };
+		28864434245EEFD900059292 /* yoshizawa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yoshizawa.jpg; sourceTree = "<group>"; };
 		28F5F6FB2417EACB00641DB7 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		28F5F7422417EB8800641DB7 /* cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cafe.jpg; sourceTree = "<group>"; };
-		28FE2A0C2417F633000A8ACA /* photo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpeg; sourceTree = "<group>"; };
-		28FE2A102417F649000A8ACA /* d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d.png; sourceTree = "<group>"; };
-		28FE2A142417F657000A8ACA /* g.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = g.jpeg; sourceTree = "<group>"; };
 		28FE2A1C2417F685000A8ACA /* HealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
 		28FE2A1E2417F69B000A8ACA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		28FE2A202417F6C3000A8ACA /* sapuriUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sapuriUITests.swift; sourceTree = "<group>"; };
@@ -78,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28864413245EA88A00059292 /* HealthKit.framework in Frameworks */,
+				28864415245EAB9600059292 /* HealthKitUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +121,8 @@
 		2812B3B323B43E9500D264EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28864414245EAB9600059292 /* HealthKitUI.framework */,
+				28864412245EA88A00059292 /* HealthKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,6 +193,7 @@
 				28FE2A292417F72C000A8ACA /* AppDelegate.swift */,
 				28FE2A3F2418A656000A8ACA /* AppDelegate.swift */,
 				28FE2A432418AB7A000A8ACA /* CouponsiteViewController.swift */,
+				28864428245EEADB00059292 /* cityViewController.swift */,
 				28FE2A1E2417F69B000A8ACA /* Main.storyboard */,
 				28FE2A2D2417F7D6000A8ACA /* sapuri.entitlements */,
 				2814A749244034280046B229 /* Info.plist */,
@@ -184,11 +207,17 @@
 		28F5F6EA2417EACB00641DB7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				28864434245EEFD900059292 /* yoshizawa.jpg */,
+				28864430245EEEA400059292 /* katakuri.jpg */,
+				2886442E245EED2800059292 /* Domannaka.jpg */,
+				2886442C245EEC4A00059292 /* yakuyoke.jpg */,
+				2886442A245EEBE200059292 /* bussan1.jpg */,
+				28864426245EEA8100059292 /* outlet.jpg */,
+				28864424245EE4E400059292 /* hodou.jpg */,
+				28864422245ED91300059292 /* yuhodou.jpg */,
+				28864420245ED8FF00059292 /* kouyou.jpg */,
 				283AAE462435A16F008EDE1C /* main.png */,
 				28F5F7422417EB8800641DB7 /* cafe.jpg */,
-				28FE2A0C2417F633000A8ACA /* photo.jpeg */,
-				28FE2A102417F649000A8ACA /* d.png */,
-				28FE2A142417F657000A8ACA /* g.jpeg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -305,12 +334,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				283AAE472435A16F008EDE1C /* main.png in Resources */,
-				28FE2A112417F649000A8ACA /* d.png in Resources */,
-				28FE2A152417F657000A8ACA /* g.jpeg in Resources */,
-				28FE2A0D2417F634000A8ACA /* photo.jpeg in Resources */,
 				28FE2A1F2417F69B000A8ACA /* Main.storyboard in Resources */,
+				28864435245EEFD900059292 /* yoshizawa.jpg in Resources */,
 				28F5F7112417EACB00641DB7 /* .gitignore in Resources */,
+				2886442D245EEC4A00059292 /* yakuyoke.jpg in Resources */,
+				28864423245ED91300059292 /* yuhodou.jpg in Resources */,
 				28F5F7432417EB8800641DB7 /* cafe.jpg in Resources */,
+				2886442B245EEBE200059292 /* bussan1.jpg in Resources */,
+				28864431245EEEA400059292 /* katakuri.jpg in Resources */,
+				28864425245EE4E400059292 /* hodou.jpg in Resources */,
+				28864427245EEA8100059292 /* outlet.jpg in Resources */,
+				28864421245ED8FF00059292 /* kouyou.jpg in Resources */,
+				2886442F245EED2800059292 /* Domannaka.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28FE2A422418AA2B000A8ACA /* MainViewController.swift in Sources */,
+				28864429245EEADB00059292 /* cityViewController.swift in Sources */,
 				28FE2A442418AB7A000A8ACA /* CouponsiteViewController.swift in Sources */,
 				28FE2A462418AC41000A8ACA /* uploadViewController.swift in Sources */,
 				28FE2A402418A656000A8ACA /* AppDelegate.swift in Sources */,
@@ -500,7 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = sapuri/sapuri.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 41;
@@ -524,7 +560,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = sapuri/sapuri.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 41;

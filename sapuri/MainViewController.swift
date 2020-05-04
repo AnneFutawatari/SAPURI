@@ -26,6 +26,15 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    let store = HKHealthStore()
+    let types: Set<HKSampleType> = [
+        HKSampleType.quantityType(forIdentifier: .stepCount)!
+    ]
+    store.requestAuthorization(toShare: types, read: types) { success, error in
+        
+    }
+
+        
         // Do any additional setup after loading the view.
     }
     

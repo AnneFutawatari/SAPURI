@@ -17,11 +17,20 @@ class CouponsiteViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func tappedSafariButton(sender: AnyObject) {
-        let qiitaUrl = NSURL(string: "https://sapuric.netlify.com")
+    @IBAction func tappedSafariButton1(sender: AnyObject) {
+        let takeoutUrl = NSURL(string: "https://sano-takeout.netlify.app")
 
-        if let qiitaUrl = qiitaUrl {
-            let safariViewController = SFSafariViewController(url: qiitaUrl as URL)
+        if let takeoutUrl = takeoutUrl {
+            let safariViewController = SFSafariViewController(url: takeoutUrl as URL)
+            present(safariViewController, animated: false, completion: nil)
+        }
+    }
+    
+    @IBAction func tappedSafariButton2(sender: AnyObject) {
+        let cafeUrl = NSURL(string: "https://sanofood.netlify.app")
+        
+        if let cafeUrl = cafeUrl {
+            let safariViewController = SFSafariViewController(url: cafeUrl as URL)
             present(safariViewController, animated: false, completion: nil)
         }
     }
