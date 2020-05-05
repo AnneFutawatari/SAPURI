@@ -20,6 +20,8 @@
 		2886442F245EED2800059292 /* Domannaka.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2886442E245EED2800059292 /* Domannaka.jpg */; };
 		28864431245EEEA400059292 /* katakuri.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28864430245EEEA400059292 /* katakuri.jpg */; };
 		28864435245EEFD900059292 /* yoshizawa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28864434245EEFD900059292 /* yoshizawa.jpg */; };
+		2886443724605F5400059292 /* flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2886443624605F5400059292 /* flower.jpg */; };
+		28B127D12461264A00D538F4 /* stamp.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B127D02461264A00D538F4 /* stamp.png */; };
 		28F5F7112417EACB00641DB7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 28F5F6FB2417EACB00641DB7 /* .gitignore */; };
 		28F5F7432417EB8800641DB7 /* cafe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F5F7422417EB8800641DB7 /* cafe.jpg */; };
 		28FE2A1D2417F685000A8ACA /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE2A1C2417F685000A8ACA /* HealthViewController.swift */; };
@@ -73,6 +75,8 @@
 		2886442E245EED2800059292 /* Domannaka.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Domannaka.jpg; sourceTree = "<group>"; };
 		28864430245EEEA400059292 /* katakuri.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = katakuri.jpg; sourceTree = "<group>"; };
 		28864434245EEFD900059292 /* yoshizawa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yoshizawa.jpg; sourceTree = "<group>"; };
+		2886443624605F5400059292 /* flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower.jpg; sourceTree = "<group>"; };
+		28B127D02461264A00D538F4 /* stamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamp.png; sourceTree = "<group>"; };
 		28F5F6FB2417EACB00641DB7 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		28F5F7422417EB8800641DB7 /* cafe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cafe.jpg; sourceTree = "<group>"; };
 		28FE2A1C2417F685000A8ACA /* HealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +211,8 @@
 		28F5F6EA2417EACB00641DB7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				28B127D02461264A00D538F4 /* stamp.png */,
+				2886443624605F5400059292 /* flower.jpg */,
 				28864434245EEFD900059292 /* yoshizawa.jpg */,
 				28864430245EEEA400059292 /* katakuri.jpg */,
 				2886442E245EED2800059292 /* Domannaka.jpg */,
@@ -343,6 +349,8 @@
 				2886442B245EEBE200059292 /* bussan1.jpg in Resources */,
 				28864431245EEEA400059292 /* katakuri.jpg in Resources */,
 				28864425245EE4E400059292 /* hodou.jpg in Resources */,
+				28B127D12461264A00D538F4 /* stamp.png in Resources */,
+				2886443724605F5400059292 /* flower.jpg in Resources */,
 				28864427245EEA8100059292 /* outlet.jpg in Resources */,
 				28864421245ED8FF00059292 /* kouyou.jpg in Resources */,
 				2886442F245EED2800059292 /* Domannaka.jpg in Resources */,
@@ -539,7 +547,7 @@
 				CODE_SIGN_ENTITLEMENTS = sapuri/sapuri.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 41;
+				CURRENT_PROJECT_VERSION = 43;
 				DEVELOPMENT_TEAM = 53Z9639ZF5;
 				INFOPLIST_FILE = "$(SRCROOT)/sapuriTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -563,7 +571,7 @@
 				CODE_SIGN_ENTITLEMENTS = sapuri/sapuri.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 41;
+				CURRENT_PROJECT_VERSION = 43;
 				DEVELOPMENT_TEAM = 53Z9639ZF5;
 				INFOPLIST_FILE = "$(SRCROOT)/sapuriTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;

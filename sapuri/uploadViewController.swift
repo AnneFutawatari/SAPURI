@@ -74,7 +74,7 @@ class uploadViewController: UIViewController, UINavigationControllerDelegate, UI
     
     func drawMaskImage(image: UIImage) -> UIImage {
         
-        let maskImage = UIImage(named: "st.jpeg")!
+        let maskImage = UIImage(named: "stamp.png")!
         
         UIGraphicsBeginImageContext(image.size)
         

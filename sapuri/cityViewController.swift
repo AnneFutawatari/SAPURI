@@ -54,7 +54,7 @@ class cityViewController: UIViewController {
     }
     
     @IBAction func tappedSafariButton5(sender: AnyObject) {
-        let takeoutUrl = NSURL(string: "https://www.google.com/search?client=safari&rls=en&q=カタクリの里&ie=UTF-8&oe=UTF-8")
+        let takeoutUrl = NSURL(string: "http://sano-kankokk.jp/information/1513/")
 
         if let takeoutUrl = takeoutUrl {
             let safariViewController = SFSafariViewController(url: takeoutUrl as URL)

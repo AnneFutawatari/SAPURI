@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreMotion
 import CoreLocation
 import MapKit
 import HealthKit
@@ -20,10 +19,12 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     var myLocationManager: CLLocationManager!
 
     var stepsStringToday = 0.0
+    var stepsStringWeek = 0.0
     var stepsStringMonth = 0.0
 
     
     @IBOutlet var todayLabel: UILabel!
+    @IBOutlet var weekLabel: UILabel!
     @IBOutlet var monthLabel: UILabel!
    
     override func viewDidLoad() {
@@ -31,6 +32,11 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         
         getTodaysSteps{(steps)in
             self.stepsStringToday = steps
+            print(steps)
+        }
+        
+        getWeekSteps {(steps)in
+            self.stepsStringWeek = steps
             print(steps)
         }
         
@@ -94,6 +100,7 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     
     override func viewDidAppear(_ animated: Bool) {
         todayLabel.text = String(stepsStringToday)
+        weekLabel.text = String(stepsStringWeek)
         monthLabel.text = String(stepsStringMonth)
     }
         
@@ -104,6 +111,26 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         let now = Date()
         let startOfDay = Calendar.current.startOfDay(for: now)
         let predicate = HKQuery.predicateForSamples(withStart: startOfDay, end: now, options: .strictStartDate)
+
+        let query = HKStatisticsQuery(quantityType: stepsQuantityType, quantitySamplePredicate: predicate, options: .cumulativeSum) { _, result, _ in
+            guard let result = result, let sum = result.sumQuantity() else {
+                completion(0.0)
+                return
+            }
+            completion(sum.doubleValue(for: HKUnit.count()))
+        }
+
+        healthStore.execute(query)
+    }
+    
+    //1週間前から今日までの現在時刻までの歩数を取得する
+    func getWeekSteps(completion: @escaping (Double) -> Void) {
+        let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
+
+        let calendar = Calendar.current
+        let now = Date()
+        let lastWeek = calendar.date(byAdding: .weekday, value: -1, to: calendar.startOfDay(for: now))
+        let predicate = HKQuery.predicateForSamples(withStart: lastWeek, end: now, options: .strictStartDate)
 
         let query = HKStatisticsQuery(quantityType: stepsQuantityType, quantitySamplePredicate: predicate, options: .cumulativeSum) { _, result, _ in
             guard let result = result, let sum = result.sumQuantity() else {
