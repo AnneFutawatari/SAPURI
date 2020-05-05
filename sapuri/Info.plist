@@ -2,17 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
 	<key>NSHealthShareUsageDescription</key>
-	<string>Trying to get pedometer value
-Trying to get pedometer value
-</string>
+	<string>Trying to get pedometer value</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>Trying to get pedometer value
 </string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-    <key>CFBundleIconName</key>
-    <string>AppIcon</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

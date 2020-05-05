@@ -123,13 +123,13 @@ class HealthViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         healthStore.execute(query)
     }
     
-    //1週間前から今日までの現在時刻までの歩数を取得する
+    //1週間前から今日までの現在時刻までの歩数を取得する(実質8日間)
     func getWeekSteps(completion: @escaping (Double) -> Void) {
         let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
 
         let calendar = Calendar.current
         let now = Date()
-        let lastWeek = calendar.date(byAdding: .weekday, value: -1, to: calendar.startOfDay(for: now))
+        let lastWeek = calendar.date(byAdding: .weekOfMonth, value: -1, to: calendar.startOfDay(for: now))
         let predicate = HKQuery.predicateForSamples(withStart: lastWeek, end: now, options: .strictStartDate)
 
         let query = HKStatisticsQuery(quantityType: stepsQuantityType, quantitySamplePredicate: predicate, options: .cumulativeSum) { _, result, _ in
